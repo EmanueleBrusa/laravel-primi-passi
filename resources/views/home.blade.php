@@ -13,36 +13,73 @@
             *{
                 padding: 0;
                 margin: 0;
-                box-sizing: 0;
+                box-sizing: border-box;
             }
             html, body {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #000;
+                color: #fff;
             }
-
+            header {
+                display: flex;
+                justify-content: center;
+                background-color: #000;
+                padding: 20px 0;
+            }
+            header a {
+                margin: 0 15px;
+                color: #fff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            main {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 50px;
+            }
             body {
-            font-family: 'Nunito', sans-serif;
+                font-family: 'Nunito', sans-serif;
             }
-            .content h1{
+            .content h1 {
                font-size: 36px;
                font-weight: bold;
                text-transform: uppercase; 
             }
+            .content h4 {
+            font-size: 20px;
+            font-weight: normal;
+            }
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="content">
-                    <h1>Hello World!</h1>
-                    <h4>{{ $descrizione }}</h2>
-                    <a href="/about_me">About me</a>
-                    <a href="/contacts">Contacts</a>
-                    <a href="">Products</a>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="content">
+                        <a href="/about_me">About me</a>
+                        <a href="/contacts">Contacts</a>
+                        <a href="/products">Products</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="content">
+                        <h1>Hello World!</h1>
+                        <h4>{{ $descrizione }}</h4>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>

@@ -21,13 +21,22 @@ Route::get('/', function () {
 });
 
 Route::get('/about_me', function () {
-    return view('about_me');
+    $data=[
+        'descrizione' => 'Non mi contattate, mi piace stare da solo e tranquillo'
+    ];
+    return view('about_me', $data);
 });
 
 Route::get('/contacts', function () {
-    return view('contacts');
+    $data=[
+        'descrizione' => 'Non avete letto "About me?" Forse dovresti farlo :'
+    ];
+    return view('contacts', $data);
 });
 
 Route::get('/products', function () {
-    return view('products');
+    $data=[
+        'descrizione' => 'Cosa ti fa credere che abbia dei prodotti da vendere? Sciò.'
+    ];
+    return view('products', $data);
 });
