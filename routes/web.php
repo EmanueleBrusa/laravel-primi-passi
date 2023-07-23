@@ -23,3 +23,11 @@ Route::get('/', function () {
 Route::get('/about_me', function () {
     return view('about_me');
 });
+
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+
+Route::get('/products', function () {
+    return view('products');
+});

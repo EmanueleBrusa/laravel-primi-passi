@@ -36,11 +36,8 @@
         <div class="container">
             <div class="row">
                 <div class="content">
-                    <h1>Hello World!</h1>
-                    <h4>{{ $descrizione }}</h2>
-                    <a href="/about_me">About me</a>
-                    <a href="/contacts">Contacts</a>
-                    <a href="">Products</a>
+                    <h1>Products:</h1>
+                    <a href="/">Home</a>
                 </div>
             </div>
         </div>
