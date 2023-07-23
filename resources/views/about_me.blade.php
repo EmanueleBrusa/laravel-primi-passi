@@ -36,8 +36,8 @@
         <div class="container">
             <div class="row">
                 <div class="content">
-                    <h1>Hello World!</h1>
-                    <a href="/about_me">About me</a>
+                    <h1>About me:</h1>
+                    <a href="/">Home</a>
                 </div>
             </div>
         </div>
