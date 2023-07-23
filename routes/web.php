@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data=[
+        'descrizione' => 'Questa è una prova per la visualizzazione dinamica in Home'
+    ];
+    return view('home', $data);
 });
 
 Route::get('/about_me', function () {

@@ -37,6 +37,7 @@
             <div class="row">
                 <div class="content">
                     <h1>Hello World!</h1>
+                    <h4>{{ $descrizione }}</h2>
                     <a href="/about_me">About me</a>
                 </div>
             </div>
